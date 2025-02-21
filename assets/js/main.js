@@ -71,3 +71,11 @@
 	});
 
 })(jQuery);
+
+function mostrarCapa(id) {
+	document.getElementById('capa-' + id).style.opacity = '1';
+}
+
+function ocultarCapa(id) {
+	document.getElementById('capa-' + id).style.opacity = '0';
+}

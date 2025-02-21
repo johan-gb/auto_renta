@@ -98,22 +98,58 @@
                 <h2>Nuestros Autos</h2>
                 <p>La mejor selección de autos de lujo</p>
             </header>
-
+    
             <div class="feature-grid">
                 <div class="feature">
-                    <div class="image rounded">
-                        <img src="images/pic04.jpg" alt="" width="169" height="169">
-                    </div>
-                    <div class="content">
-                        <header>
-                            <h4>Auto 1</h4>
-                            <p>Descripción del auto 1</p>
-                        </header>
-
-                        <p>Características y detalles del auto 1...</p>
+                    <div class="imagen-container" onmouseover="mostrarCapa(1)" onmouseout="ocultarCapa(1)">
+                        <img src="./images/Suburban.jpg" alt="Auto 1" class="Suburban">
+                        <div id="capa-1" class="capa-info">
+                            <h3>Suburban</h3>
+                            <p>TOYOTA SUBURBAN 5.3L</p>
+                            <ul>
+                                <li>Motor V8 de 5.3L</li>
+                                <li>Transmisión automática de 10 velocidades</li>
+                                <li>Capacidad para 8 pasajeros</li>
+                                <li>Amplio espacio de carga</li>
+                                <li>Tracción 4x4 (opcional)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                {/* Repite este bloque para cada auto */}
+                <div class="feature">
+                    <div class="imagen-container" onmouseover="mostrarCapa(2)" onmouseout="ocultarCapa(2)">
+                        <img src="./images/Tahoe.jpg" alt="Auto 2" class="Tahoe">
+                        <div id="capa-2" class="capa-info">
+                            <h3>Tahoe</h3>
+                            <p>Descripción del auto 2</p>
+                            <ul>
+                                <li>Motor V8 de 5.3L o 6.2L (dependiendo de la versión)</li>
+                                <li>Transmisión automática de 10 velocidades</li>
+                                <li>Capacidad para hasta 9 pasajeros (dependiendo de la configuración)</li>
+                                <li>Amplio espacio interior y de carga</li>
+                                <li>Tracción trasera o 4x4 (opcional)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="imagen-container" onmouseover="mostrarCapa(3)" onmouseout="ocultarCapa(3)">
+                        <img src="./images/GMGYukon.jpg" alt="Auto 3" class="GMGYukon">
+                        <div id="capa-3" class="capa-info">
+                            <h3>GMC Yukon</h3>
+                            <p>Descripción del auto 3</p>
+                            <ul>
+                                <li>Motor V8 de 5.3L o 6.2L (dependiendo de la versión)</li>
+                                <li>Transmisión automática de 10 velocidades</li>
+                                <li>Capacidad para hasta 9 pasajeros (dependiendo de la configuración)</li>
+                                <li>Amplio espacio interior y de carga</li>
+                                <li>Tracción trasera o 4x4 (opcional)</li>
+                                <li>Diseño exterior robusto y elegante</li>
+                                <li>Tecnología y confort de primera clase</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
