@@ -79,3 +79,32 @@ function mostrarCapa(id) {
 function ocultarCapa(id) {
 	document.getElementById('capa-' + id).style.opacity = '0';
 }
+
+// Agrega este código a tu archivo main.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Manejar click en los items del dropdown
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            if (href) {
+                window.location.href = href;
+            }
+        });
+    });
+
+    // Cerrar el dropdown cuando se hace click fuera
+    document.addEventListener('click', function(e) {
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            if (!dropdown.contains(e.target)) {
+                const menu = dropdown.querySelector('.dropdown-menu');
+                if (menu) {
+                    menu.style.display = 'none';
+                }
+            }
+        });
+    });
+});
